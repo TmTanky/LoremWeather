@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans&display=swap');
+
+body { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10rem 15rem;
+    margin: 2rem 4rem;
+    border: solid rgb(77, 167, 241) 3px;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.info h1 {
+    font-size: 4rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 1rem 0rem;
+}
+
+.info p {
+    font-size: 1.5rem;
+}
+
+/* main ejs */
+
+.inputbox {
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.inputbox .inputloc {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 1rem 0rem;
+    background-color: rgba(220, 220, 220, 0.5);
+}
+
+
+
+.button {
+    padding: 0.5rem 1rem;
+    background-color: rgb(77, 167, 241);
+    outline: none;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(77, 167, 241, 0.5);
+
+}
+
+.h1main {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+
+
+.boxmain {
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 2rem;
+    border: solid gray 3px;
+    border-radius: 10px;
+    margin: 1.5rem 15rem;
+}
+
+.footer {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: rgba(220, 220, 220, 0.5);
+    padding: 0.8rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer p {
+    margin: auto;
+}
+
+
+
+/* navbar */
+
+.navmain {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.navmain .navlogo {
+    flex: 1;
+}
+
+.navmain .navlogo h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    margin: 0.5rem 1rem;
+}
+
+.navmain .navlogo a, .failbox .fail a  {
+    text-decoration: none;
+}
+
+.mainboots {
+    flex: 5;
+}
+
+.bano {
+    text-align: left;
+    background-color: red;
+}
+
+
+img {
+    width: 50px;
+}
+
+
+
+/* contact ejs */
+
+.contakers {
+    display: flex;
+    margin: 1rem 0rem;
+    padding: 4.2rem 4rem;
+}
+
+.contakers .cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    width: 70vw;
+    margin: 1.5rem 0rem;
+    padding: 0.3rem 0.6rem;
+}
+
+.msgs {
+    padding: 0.3rem 0.6rem;
+    width: 70vw;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+.submit {
+    padding: 0.5rem 1rem;
+    background-color: rgb(77, 167, 241);
+    outline: none;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+    color: white;
+}
+
+/* lorem ejs */
+
+.lorem {
+    margin: 1rem;
+}
+
+.loremers {
+    padding: 7rem 4rem;
+    font-size: 2vw
+}
+
+/* failed ejs  */
+
+.failbox {
+    display: flex;
+    flex-direction: column;
+    padding: 13rem 4rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.fail {
+    margin: 2rem 0rem 0rem 0rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(77, 167, 241);
+    outline: none;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+    color: white;
+}
+
+.failbox .fail a {
+    color: white;
+}
+
+/* MediaQ */
+
+@media screen and (max-width: 1040px) {
+    
+    .boxmain {
+        margin: 1rem 3rem;
+    }
+
+    .info {
+        padding: 5rem 8rem;
+    }
+
+    .info h1 {
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .info p {
+        font-size: 3vw;
+    }
+
+    .navmain {
+        flex-direction: column;
+    }
+
+    .navmain .navlogo {
+        justify-content: center;
+    }
+
+    .loremers {
+        font-size: 3vw;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .info {
+        margin: 2rem 2rem;
+        padding: 4rem 6rem 7rem 6rem;
+    }
+
+    .info h1 {
+        font-size: 7vw;
+    }
+
+    .info p {
+        font-size: 5vw;
+    }
+
+   
+    .loremers {
+        font-size: 4vw;
+        padding: 3rem 2rem;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .info {
+        margin: 1rem;
+        padding: 2rem 4rem 5rem 4rem;
+    }
+
+    .info h1 {
+        font-size: 3vw;
+    }
+
+    .info p {
+        font-size: 1.5vw;
+
+    }
+
+    .loremers {
+        font-size: 3vw;
+    }
+
+    
+
+}
