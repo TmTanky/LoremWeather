@@ -107,7 +107,17 @@ app.get(`/lorem`, (req, res) => {
 
 })
 
+app.post(`/lorem`, (req, res) => {
+
+    res.render(`lorem`, {year: yearNow})
+
+})
+
 app.get(`/failed`, (req, res) => {
+    res.render(`failed`, {year: yearNow})
+})
+
+app.post(`/failed`, (req, res) => {
     res.render(`failed`, {year: yearNow})
 })
 
