@@ -277,19 +277,47 @@ img {
 
 }
 
+@media screen and (max-width: 500px) {
+
+    .info {
+        margin: 1rem;
+        padding: 5rem 2rem;
+    }
+
+    .info h1 {
+        font-size: 5vw;
+
+    }
+
+    .info p {
+        font-size: 3vw;
+
+
+    }
+
+    .loremers {
+        font-size: 3vw;
+    }
+
+    
+
+}
+
 @media screen and (max-width: 400px) {
 
     .info {
         margin: 1rem;
-        padding: 2rem 4rem 5rem 4rem;
+        padding: 5rem 2rem;
     }
 
     .info h1 {
-        font-size: 3vw;
+        font-size: 5vw;
+
     }
 
     .info p {
-        font-size: 1.5vw;
+        font-size: 3vw;
+
 
     }
 
