@@ -2,8 +2,28 @@
 
 <div class="info">
 
-    <h1> The country you pick is <%= country %> </h1>
-    <p> The situation in the <%= country %> is <%= illus %> <img src="http://openweathermap.org/img/w/<%= image %>.png" alt="icon"> </p>
+    <h1>  <%= country %> <img src="http://openweathermap.org/img/w/<%= image %>.png" alt="icon"> </h1>
+
+    <div class="sect">
+
+        <div class="box1 allbox">
+            <p> <%= temper %>°F </p>
+        </div>
+
+        <div class="box2 allbox">
+            <p> <%= illus %> </p>
+        </div>
+
+        <div class="box3 allbox">
+            <p> <%= countryHome %> </p>
+        </div>
+
+    </div>
+
+
+
+
+
 
 </div>
 

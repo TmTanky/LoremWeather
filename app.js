@@ -44,18 +44,23 @@ app.post(`/`, (req, res) => {
 
     function getWeather() {
 
-        const url = `http://api.openweathermap.org/data/2.5/weather?q=${location},&APPID=ac6be1975e351fdc78062be11613eb74`
+        const url = `http://api.openweathermap.org/data/2.5/weather?q=${location},&APPID=ac6be1975e351fdc78062be11613eb74&units=metric`
 
         return axios.get(url)
     }
     getWeather().then((info) => {
         const wholeData = info.data
         const countryName = wholeData.name.toUpperCase()
-        const illus = wholeData.weather[0].description
+        const illus = wholeData.weather[0].description.toUpperCase()
 
         const icon = wholeData.weather[0].icon
+        
+        const temp = wholeData.main.temp
+        const count = wholeData.sys.country
 
-        res.render(`index`, {country: countryName, illus: illus, image: icon, year: yearNow})
+        console.log(count)
+
+        res.render(`index`, {country: countryName, illus: illus, image: icon, year: yearNow , temper: temp, countryHome: count})
     })
     .catch((err) => {
         console.log(err)

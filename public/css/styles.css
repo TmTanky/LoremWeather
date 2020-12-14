@@ -136,7 +136,9 @@ button:hover {
 
 
 img {
-    width: 50px;
+    width: 100px;
+    /* background-color: gainsboro;
+    border-radius: 50%; */
 }
 
 
@@ -217,7 +219,48 @@ img {
     color: white;
 }
 
+/* index ejs  */
+
+.sect {
+    display: flex;
+    justify-content: center;
+}
+
+.allbox {
+    display: flex;
+    height: 30vh;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    border-right: solid black 2px;
+}
+
+.box2 {
+    border-right: solid black 2px;
+}
+
+
+
+
+
+
 /* MediaQ */
+
+@media screen and (max-width: 1200px) {
+    
+    .allbox {
+        height: 20vh;
+        width: 30vw;
+    }
+
+    .allbox p {
+        font-size: 2vw;
+    }
+
+}
 
 @media screen and (max-width: 1040px) {
     
@@ -250,13 +293,35 @@ img {
         font-size: 3vw;
     }
 
+    .allbox {
+        height: 20vh;
+        width: 30vw;
+    }
+
+    .allbox p {
+        font-size: 2vw;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    
+    .allbox {
+        height: 20vh;
+        width: 30vw;
+    }
+
+    .allbox p {
+        font-size: 2vw;
+    }
+
 }
 
 @media screen and (max-width: 700px) {
 
     .info {
-        margin: 2rem 2rem;
-        padding: 4rem 6rem 7rem 6rem;
+        margin: 2rem 1rem;
+        padding: 3rem 2rem;
     }
 
     .info h1 {
@@ -273,6 +338,35 @@ img {
         padding: 3rem 2rem;
     }
 
+    .allbox {
+        height: 20vh;
+        width: 30vw;
+    }
+
+    .allbox p {
+        font-size: 2.5vw;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .info {
+        margin: 2rem 1rem;
+        padding: 3rem 2rem;
+    }
+
+    .allbox {
+        height: 15vh;
+        width: 30vw;
+    }
+
+    .allbox p {
+        font-size: 2.5vw;
+    }
+
     
 
 }
@@ -280,8 +374,8 @@ img {
 @media screen and (max-width: 500px) {
 
     .info {
-        margin: 1rem;
-        padding: 5rem 2rem;
+        margin: 2rem 1rem;
+        padding: 3rem 2rem;
     }
 
     .info h1 {
@@ -299,6 +393,15 @@ img {
         font-size: 5vw;
     }
 
+    .allbox {
+        height: 15vh;
+        width: 30vw;
+    }
+
+    .allbox p {
+        font-size: 3vw;
+    }
+
     
 
 }
@@ -306,8 +409,8 @@ img {
 @media screen and (max-width: 400px) {
 
     .info {
-        margin: 1rem;
-        padding: 5rem 2rem;
+        margin: 2rem 1rem;
+        padding: 2rem 2rem;
     }
 
     .info h1 {
@@ -323,6 +426,15 @@ img {
 
     .loremers {
         font-size: 4vw;
+    }
+
+    .allbox {
+        height: 20vh;
+        width: 30vw;
+    }
+
+    .allbox p {
+        font-size: 2.5vw;
     }
 
     
