@@ -13,8 +13,8 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 10rem 15rem;
-    margin: 2rem 4rem;
-    border: solid rgb(77, 167, 241) 3px;
+    margin: 4rem 2rem;
+    border: solid black 3px;
     border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -73,11 +73,6 @@ button:hover {
     font-family: 'Ubuntu', sans-serif;
 }
 
-
-
-
-
-
 .boxmain {
     display: flex;
     flex-direction: column;
@@ -90,15 +85,16 @@ button:hover {
 .footer {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    background-color: rgba(220, 220, 220, 0.5);
     padding: 0.8rem 0rem;
     display: flex;
     justify-content: center;
     align-content: center;
+    background-color: rgba(220, 220, 220, 0.5);
 }
 
 .footer p {
     margin: auto;
+    color: black;
 }
 
 
@@ -108,6 +104,7 @@ button:hover {
 .navmain {
     display: flex;
     font-family: 'Open Sans', sans-serif;
+    background-color: rgb(77, 167, 241);
     
 }
 
@@ -123,6 +120,7 @@ button:hover {
 
 .navmain .navlogo a, .failbox .fail a  {
     text-decoration: none;
+    color: rgb(77, 167, 241);
 }
 
 .mainboots {
@@ -187,7 +185,7 @@ img {
 }
 
 .loremers {
-    padding: 7rem 4rem;
+    padding: 11rem 4rem;
     font-size: 2vw
 }
 
@@ -232,6 +230,11 @@ img {
     width: 20vw;
     justify-content: center;
     align-items: center;
+    margin: 2rem 0rem 0rem 0rem;
+}
+
+.allbox p {
+    font-size: 2vw;
 }
 
 .box1 {
@@ -242,6 +245,11 @@ img {
     border-right: solid black 2px;
 }
 
+.weath {
+    text-align: center;
+    margin: 3rem 0rem 0rem 0rem;
+}
+
 
 
 
@@ -250,6 +258,11 @@ img {
 /* MediaQ */
 
 @media screen and (max-width: 1200px) {
+
+    .info {
+        margin: 3rem 1rem 3rem 1rem;
+        padding: 3rem 2rem;
+    }
     
     .allbox {
         height: 20vh;
@@ -269,7 +282,8 @@ img {
     }
 
     .info {
-        padding: 5rem 8rem;
+        margin: 3rem 1rem 3rem 1rem;
+        padding: 3rem 2rem;
     }
 
     .info h1 {
@@ -290,7 +304,7 @@ img {
     }
 
     .loremers {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .allbox {
@@ -305,6 +319,11 @@ img {
 }
 
 @media screen and (max-width: 800px) {
+
+    .info {
+        margin: 3rem 1rem 3rem 1rem;
+        padding: 3rem 2rem;
+    }
     
     .allbox {
         height: 20vh;
@@ -320,7 +339,7 @@ img {
 @media screen and (max-width: 700px) {
 
     .info {
-        margin: 2rem 1rem;
+        margin: 3rem 1rem 3rem 1rem;
         padding: 3rem 2rem;
     }
 
@@ -335,7 +354,7 @@ img {
    
     .loremers {
         font-size: 4vw;
-        padding: 3rem 2rem;
+        padding: 8rem 3rem;
     }
 
     .allbox {
@@ -354,7 +373,7 @@ img {
 @media screen and (max-width: 600px) {
     
     .info {
-        margin: 2rem 1rem;
+        margin: 3rem 1rem 3rem 1rem;
         padding: 3rem 2rem;
     }
 
@@ -367,6 +386,14 @@ img {
         font-size: 2.5vw;
     }
 
+    .boxmain {
+        padding: 5rem 2rem;
+    }
+
+    .loremers {
+        font-size: 5vw;
+        padding: 7rem 3rem;
+    }
     
 
 }
@@ -374,7 +401,7 @@ img {
 @media screen and (max-width: 500px) {
 
     .info {
-        margin: 2rem 1rem;
+        margin: 3rem 1rem 3rem 1rem;
         padding: 3rem 2rem;
     }
 
@@ -391,6 +418,7 @@ img {
 
     .loremers {
         font-size: 5vw;
+        padding: 5rem 3rem;
     }
 
     .allbox {
@@ -401,6 +429,8 @@ img {
     .allbox p {
         font-size: 3vw;
     }
+
+    
 
     
 
@@ -409,12 +439,12 @@ img {
 @media screen and (max-width: 400px) {
 
     .info {
-        margin: 2rem 1rem;
-        padding: 2rem 2rem;
+        margin: 3rem 1rem 3rem 1rem;
+        padding: 3rem 2rem;
     }
 
     .info h1 {
-        font-size: 5vw;
+        font-size: 7vw;
 
     }
 
@@ -425,17 +455,28 @@ img {
     }
 
     .loremers {
-        font-size: 4vw;
+        font-size: 5vw;
+        padding: 4rem 2rem;
     }
 
     .allbox {
-        height: 20vh;
+        height: 15vh;
         width: 30vw;
     }
 
     .allbox p {
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
+
+    .h1main {
+        font-size: 7vw;
+    }
+
+    .boxmain {
+        padding: 3rem 2rem;
+    }
+
+    
 
     
 
