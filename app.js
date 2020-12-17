@@ -92,15 +92,17 @@ app.post(`/contact`, (req, res) => {
     } else if (!emailMan && messageMan) {
         res.redirect(`/failed`)
     } else {
-        feedbackProc.save((err) => {
-            if (err) {
-                console.log(err)
-            } else {
-                res.redirect(`/`)
-            }
-        })
-        
+        feedbackProc.save()
+        res.redirect(`/`)
     }
+
+    // if (feedbackProc) {
+    //     feedbackProc.save()
+    //     res.redirect(`/contact`)
+    // } else {
+    //     res.send(res.status(404))
+    //     console.log(`Error`)
+    // }
 
 })
 
